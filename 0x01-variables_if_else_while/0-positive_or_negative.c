@@ -1,8 +1,10 @@
+#include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 /**
- * main --generate random numbers to specify positive or negative
+ * main - generate random numbers to specify positive or negative
  *
- * Return: always (0)
+ * return: always (0)
  *
  */
 
@@ -10,18 +12,18 @@ int main(void)
 {
 	int n;
 
-	srand(time(0);
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("%d is positive \n");
+		printf("%d is positive \n", n);
 	} else if (n == 0)
 	{
-		printf("%d is zero \n");
+		printf("%d is zero \n", n);
 	}
 	else
 	{
-		printf("%d is negative \n");
+		printf("%d is negative \n", n);
 	}
 	return (0);
 }
