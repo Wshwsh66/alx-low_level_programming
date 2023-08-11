@@ -1,24 +1,18 @@
 #include <stdio.h>
 /**
- * main - print alpha in caps and low case
+ * main - print alphabets in lower case a-z
  *
- * Return: (0)
+ * Return: always (0)
  *
  */
 int main(void)
 {
-	char Lower = 'a';
-	char Upper = 'A';
+	char i = 'a';
 
-	while (Lower <= 'z')
+	while (i <= 'z')
 	{
-		putchar(Lower);
-		Lower++;
-	}
-	while (Upper <= 'Z')
-	{
-		putchar(Upper);
-		Upper++;
+		putchar(i);
+		i++;
 	}
 	putchar('\n');
 	return (0);
